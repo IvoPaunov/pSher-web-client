@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Metadata -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Photo sharing service">
+    <meta name="author" content="Kratos Telerik Academy team">
+    <!-- Icon and Title of the page -->
+    <link rel="icon" href="./img/photo.gif">
+    <title>PShare</title>
+    <!-- Loading styles -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/indexPageCustomStyles.css" rel="stylesheet">
+    <link href="./css/profilePage.css" rel="stylesheet">
+    <link href="./css/fotorama.css" rel="stylesheet">
+    <!-- Lodaing libraries -->
+    <script src="scripts/libraries/handlebars.js"></script>
+    <script src="scripts/libraries/jquery.js"></script>
+    <script src="scripts/libraries/sammy.js"></script>
+    <script src="scripts/libraries/traceur.js"></script>
+    <script src="scripts/libraries/es6-module-loader-dev.js"></script>
+    <script src="scripts/libraries/crypto_sha.js"></script>
+    <script src="scripts/libraries/fotorama.js"></script>
+    <script src="https://cdn.pubnub.com/pubnub-dev.js"></script>
+    <!-- Start app -->
+    <script type="text/javascript">
+    System.import('scripts/app.js');
+    </script>
+</head>
+
+<body>
+    <div class="site-wrapper">
+        <div class="row" id="backgroundContainer">
+        </div>
+        <div class="site-wrapper-inner">
+            <div class="cover-container">
+                <div id="container" class="cover">
+                    <!--insert pages here-->
+                </div>
+                <div class="masthead clearfix">
+                    <div class="inner">
+                        <h3 class="masthead-brand">
+                            <img src="./img/pshare_logo.png" alt="logo" height="30px">
+                            <span>PShare</span>
+                        </h3>
+                        <nav>
+                            <ul class="nav masthead-nav">
+                                <li id="homeLink"><a href="#/">Home</a></li>
+                                <li id="profileLink"><a href="#/user">Profile</a></li>
+                                <li id="imagesLink"><a href="#/images">Images</a></li>
+                                <li id="logLink"><a id="log" href="#/login">Log in</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="mastfoot">
+                    <div class="inner">
+                        <p>Photo manager by <a href="https://github.com/Kratos-TA">Kratos team</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
